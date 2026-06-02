@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Memora1",
+  "description": "AI-powered study assistant that transforms notes into aesthetic study sheets, flashcards, and quizzes with spaced repetition.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+
+  --color-neo-yellow: #FFE600;
+  --color-neo-pink: #FF6B6B;
+  --color-neo-blue: #4D96FF;
+  --color-neo-green: #6BCB77;
+  --color-neo-background: #FAF9F6;
+  --color-neo-black: #1A1A1B;
+}
+
+@layer base {
+  body {
+    @apply bg-neo-background text-neo-black font-sans antialiased;
+  }
+}
+
+@layer components {
+  .neo-card {
+    @apply border-4 border-neo-black shadow-[4px_4px_0px_#1A1A1B] bg-white transition-all;
+  }
+  
+  .neo-card-hover {
+    @apply hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#1A1A1B];
+  }
+
+  .neo-button {
+    @apply border-4 border-neo-black shadow-[4px_4px_0px_#1A1A1B] px-6 py-2 font-bold uppercase tracking-wider transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_#1A1A1B];
+  }
+
+  .neo-input {
+    @apply border-4 border-neo-black p-4 font-medium focus:ring-0 focus:outline-none bg-white;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
